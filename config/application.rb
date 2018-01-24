@@ -18,7 +18,7 @@ require 'sprockets/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module BaseRailsApp
+module DemoApp
   # Top level application class
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
