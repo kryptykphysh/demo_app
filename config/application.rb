@@ -33,5 +33,10 @@ module DemoApp
 
     # Use SQL in schema
     config.active_record.schema_format = :sql
+
+    # Use UUIDs as primary keys
+    config.generators do |g|
+      g.orm :active_record, primary_key_type: :uuid
+    end
   end
 end
